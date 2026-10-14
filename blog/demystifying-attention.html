@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demystifying Attention Mechanisms — Kazi Fahad</title>
+<meta name="description" content="A deep dive into the intuition and math behind attention in neural networks.">
+<meta name="theme-color" content="#07080a">
+<meta property="og:title" content="Demystifying Attention Mechanisms — Kazi Fahad">
+<meta property="og:description" content="A deep dive into the intuition and math behind attention in neural networks.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/bebas-neue-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/style.css?v=2">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="nav container" aria-label="Main">
+    <a class="brand" href="../index.html">Kazi Fahad</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../publications.html">Publications</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../blog.html" aria-current="page">Blog</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+  </nav>
+</header>
+<main id="main">
+<section class="page-hero" style="padding-bottom:48px;border-bottom:0">
+  <div class="container">
+    <div class="article">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="../blog.html">Blog</a><span>/</span><span aria-current="page">Deep Learning</span></nav>
+      <div class="post-meta"><span class="cat">Deep Learning</span><span>May 12, 2024</span><span>8 min read</span></div>
+      <h1 class="display h2">Demystifying Attention Mechanisms</h1>
+      <p class="lead" style="margin-top:18px">A deep dive into the intuition and math behind attention in neural networks.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="article">
+      <div class="article-cover"><div class="art-violet"></div></div>
+      <p>Attention is the idea that made modern deep learning click. Transformers, large language models and most state-of-the-art vision models are built on it, yet the core mechanism fits on a napkin. In this post we&#039;ll build it up from scratch.</p>
+<h2>Attention as a soft lookup table</h2>
+<p>Imagine a dictionary that maps <em>keys</em> to <em>values</em>. A normal lookup returns the value whose key exactly matches your query. Attention does something gentler: it compares your <strong>query</strong> with <em>every</em> key, turns the similarity scores into weights, and returns a weighted average of all the values.</p>
+<blockquote>Attention is a differentiable dictionary lookup: every key contributes, in proportion to how well it matches the query.</blockquote>
+<h2>Scaled dot-product attention</h2>
+<p>With queries <code>Q</code>, keys <code>K</code> and values <code>V</code> stacked as matrices, the whole operation is a single line:</p>
+<div class="math">Attention(Q, K, V) = softmax(QKᵀ / √dₖ) V</div>
+<p>The division by <code>√d_k</code> keeps the dot products from growing with the dimension, which would otherwise push the softmax into regions with vanishing gradients.</p>
+<pre><code>import torch
+import torch.nn.functional as F
+
+def attention(q, k, v, mask=None):
+    d_k = q.size(-1)
+    scores = q @ k.transpose(-2, -1) / d_k ** 0.5
+    if mask is not None:
+        scores = scores.masked_fill(mask == 0, float(&quot;-inf&quot;))
+    weights = F.softmax(scores, dim=-1)
+    return weights @ v, weights</code></pre>
+<h2>Why multiple heads?</h2>
+<p>A single attention head produces one weighted average, so it can only focus on one kind of relationship at a time. Multi-head attention runs several heads in parallel on lower-dimensional projections, letting the model attend to syntax, position and meaning simultaneously, then concatenates the results.</p>
+<h2>The cost of looking everywhere</h2>
+<p>Comparing every query with every key costs <code>O(n²)</code> in sequence length. That is fine for a paragraph and painful for a book or a high-resolution image, which is why so much current research, including my own, focuses on <strong>sparse and efficient attention</strong>.</p>
+<h2>Takeaways</h2>
+<ul><li>Attention is a weighted average whose weights come from query-key similarity.</li><li>Scaling by √dₖ keeps training stable.</li><li>Multiple heads capture different relationships in parallel.</li><li>Quadratic cost is the main bottleneck for long inputs.</li></ul>      <div class="author-box">
+        <img src="../assets/img/portrait.jpg" alt="" width="64" height="64">
+        <div><b>Kazi Fahad</b><span>AI Researcher &amp; Machine Learning Enthusiast</span></div>
+      </div>
+      <p style="margin-top:40px"><a class="link-arrow" href="../blog.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg> Back to all posts</a></p>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+  <div><span class="eyebrow">Keep reading</span><h2 class="display h2">More articles</h2></div>
+  <a class="link-arrow" href="../blog.html">View all posts <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+</div>    <div class="grid grid-3"><article class="card post-card reveal" id="reliable-ml-systems" data-tags="mlops">
+  <a class="thumb" href="../blog/reliable-ml-systems.html" aria-hidden="true" tabindex="-1"><div class="art-teal"></div></a>
+  <div class="body">
+    <div class="post-meta"><span class="cat">MLOps</span><span>Apr 28, 2024</span><span>10 min read</span></div>
+    <h3><a href="../blog/reliable-ml-systems.html">Building Reliable ML Systems</a></h3>
+    <p>Best practices for building, testing, and deploying ML systems in production.</p>
+    <a class="mini-link" href="../blog/reliable-ml-systems.html">Read more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </div>
+</article><article class="card post-card reveal" id="representation-learning-2024" data-tags="research">
+  <a class="thumb" href="../blog/representation-learning-2024.html" aria-hidden="true" tabindex="-1"><div class="art-orange"></div></a>
+  <div class="body">
+    <div class="post-meta"><span class="cat">Research</span><span>Apr 10, 2024</span><span>7 min read</span></div>
+    <h3><a href="../blog/representation-learning-2024.html">Representation Learning in 2024</a></h3>
+    <p>Key trends and emerging directions in representation learning research.</p>
+    <a class="mini-link" href="../blog/representation-learning-2024.html">Read more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </div>
+</article><article class="card post-card reveal" id="pseudo-labels" data-tags="research">
+  <a class="thumb" href="../blog/pseudo-labels.html" aria-hidden="true" tabindex="-1"><div class="art-lime"></div></a>
+  <div class="body">
+    <div class="post-meta"><span class="cat">Research</span><span>Mar 02, 2024</span><span>6 min read</span></div>
+    <h3><a href="../blog/pseudo-labels.html">When Pseudo Labels Lie</a></h3>
+    <p>What goes wrong with self-training, and how uncertainty estimates help.</p>
+    <a class="mini-link" href="../blog/pseudo-labels.html">Read more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </div>
+</article></div>
+  </div>
+</section>
+</main>
+<section class="cta" aria-labelledby="cta-title">
+  <div class="container cta-grid">
+    <div class="reveal">
+      <span class="eyebrow">Let’s connect</span>
+      <h2 class="display h2" id="cta-title">Work together?</h2>
+      <p>I’m always open to discussing research collaborations, internships, and exciting opportunities.</p>
+    </div>
+    <div class="reveal">
+      <div class="mail-block"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="1.5"/><path d="m3 6 9 7 9-7"/></svg>
+        <div><small>Send me an email</small><a href="mailto:kazi.fahad@research.ai">kazi.fahad@research.ai <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div>
+      </div>
+      <a class="btn btn-outline" href="../assets/files/Kazi_Fahad_CV.pdf" download>Download CV <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg></a>
+    </div>
+  </div>
+</section><footer class="site-footer">
+  <div class="container footer-bar">
+    <p style="margin:0">&copy; <span data-year>2026</span> Kazi Fahad. All rights reserved.</p>
+    <div class="socials"><a href="https://github.com/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="GitHub"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="LinkedIn"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a><a href="https://x.com/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="X (Twitter)"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a></div>
+  </div>
+</footer><script src="../assets/js/main.js?v=2" defer></script>
+</body>
+</html>
