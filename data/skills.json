@@ -1,0 +1,17 @@
+[
+  {
+    "id": "sk001",
+    "group": "Machine Learning",
+    "items": "Deep Learning, Self-Supervised Learning, LLMs, Contrastive Learning, Uncertainty Estimation, Domain Generalization"
+  },
+  {
+    "id": "sk002",
+    "group": "Frameworks",
+    "items": "PyTorch, JAX, Hugging Face, Lightning, scikit-learn, ONNX"
+  },
+  {
+    "id": "sk003",
+    "group": "Engineering",
+    "items": "Python, C++, Docker, Kubernetes, Ray, Weights & Biases, GCP / AWS"
+  }
+]

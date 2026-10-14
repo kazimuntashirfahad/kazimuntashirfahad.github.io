@@ -1,0 +1,26 @@
+[
+  {
+    "id": "aw001",
+    "year": "2024",
+    "title": "CVPR Highlight",
+    "detail": "Semantic-Aware Contrastive Learning for Domain Generalization"
+  },
+  {
+    "id": "aw002",
+    "year": "2023",
+    "title": "Graduate Research Fellowship",
+    "detail": "Awarded for research on robust representation learning"
+  },
+  {
+    "id": "aw003",
+    "year": "2022",
+    "title": "EMNLP Best Resource Paper",
+    "detail": "Cross-Lingual Transfer for Low-Resource Bangla NLP"
+  },
+  {
+    "id": "aw004",
+    "year": "2020",
+    "title": "Dean’s List & Gold Medal",
+    "detail": "Top of the graduating class in Computer Science"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ex001",
+    "when": "Summer 2024",
+    "title": "Research Scientist Intern",
+    "org": "AI Research Lab (placeholder)",
+    "description": "Worked on long-context efficient attention for vision transformers; resulted in a NeurIPS workshop paper."
+  },
+  {
+    "id": "ex002",
+    "when": "2023",
+    "title": "Machine Learning Engineer Intern",
+    "org": "Tech Company (placeholder)",
+    "description": "Built reproducible training pipelines and evaluation dashboards used across three teams."
+  },
+  {
+    "id": "ex003",
+    "when": "2020 — 2022",
+    "title": "Graduate Research Assistant",
+    "org": "Vision & Language Lab",
+    "description": "Led data collection and baselines for low-resource Bangla NLP benchmarks."
+  }
+]

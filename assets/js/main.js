@@ -111,42 +111,43 @@
     });
   });
 
-  /* Contact form: posts to contact.php (works on Hostinger PHP hosting).
-     Falls back to opening the visitor's email app if the server can't send. */
+  /* Contact form: sends through Formspree (set your form ID in the admin panel).
+     Without a form ID, or if sending fails, it opens the visitor's email app instead. */
   var form = document.querySelector("#contact-form");
   if (form) {
     var status = form.querySelector(".form-status");
     var submit = form.querySelector("button[type=submit]");
+    var mailtoLink = function (data) {
+      var to = form.getAttribute("data-mailto");
+      var subject = encodeURIComponent(data.get("subject") || "Hello from your website");
+      var body = encodeURIComponent((data.get("message") || "") + "\n\n— " + (data.get("name") || "") + " (" + (data.get("email") || "") + ")");
+      return "mailto:" + to + "?subject=" + subject + "&body=" + body;
+    };
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
-      if (form.action.indexOf("YOUR_FORM_ID") !== -1) {
-        /* Formspree not set up yet: open the visitor's email app instead. */
-        var d = new FormData(form);
-        var body = (d.get("message") || "") + "\n\n— " + (d.get("name") || "") + " (" + (d.get("email") || "") + ")";
-        window.location.href = "mailto:" + form.getAttribute("data-mailto") + "?subject=" + encodeURIComponent(d.get("subject") || "Hello from your website") + "&body=" + encodeURIComponent(body);
+      var data = new FormData(form);
+      var action = form.getAttribute("action") || "";
+      if (!/^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+$/.test(action)) {
+        window.location.href = mailtoLink(data);
+        status.textContent = "Your email app should open with the message ready to send.";
+        status.className = "form-status ok";
         return;
       }
-      var data = new FormData(form);
       submit.disabled = true;
       var original = submit.innerHTML;
       submit.firstChild.textContent = "Sending… ";
       status.className = "form-status";
 
-      fetch(form.action, { method: "POST", body: data, headers: { "Accept": "application/json" } })
-        .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
-        .then(function (res) {
-          if (res && res.ok) {
-            status.textContent = "Thanks! Your message has been sent. I'll get back to you soon.";
-            status.className = "form-status ok";
-            form.reset();
-          } else { throw new Error(res && res.error); }
+      fetch(action, { method: "POST", body: data, headers: { "Accept": "application/json" } })
+        .then(function (r) {
+          if (!r.ok) throw new Error("send failed");
+          status.textContent = "Thanks! Your message has been sent. I'll get back to you soon.";
+          status.className = "form-status ok";
+          form.reset();
         })
         .catch(function () {
-          var to = form.getAttribute("data-mailto");
-          var subject = encodeURIComponent(data.get("subject") || "Hello from your website");
-          var body = encodeURIComponent((data.get("message") || "") + "\n\n— " + (data.get("name") || "") + " (" + (data.get("email") || "") + ")");
-          status.innerHTML = "The form couldn't be sent from here. <a href=\"mailto:" + to + "?subject=" + subject + "&body=" + body + "\" style=\"text-decoration:underline\">Send it by email instead</a>.";
+          status.innerHTML = "The form couldn't be sent from here. <a href=\"" + mailtoLink(data).replace(/"/g, "&quot;") + "\" style=\"text-decoration:underline\">Send it by email instead</a>.";
           status.className = "form-status err";
         })
         .finally(function () { submit.disabled = false; submit.innerHTML = original; });
