@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ed001",
+    "when": "2022 — Present",
+    "title": "Ph.D. in Computer Science",
+    "org": "University (placeholder) · Machine Learning Group",
+    "description": "Thesis on robust and efficient representation learning. Advisor: Prof. I. Advisor."
+  },
+  {
+    "id": "ed002",
+    "when": "2020 — 2022",
+    "title": "M.Sc. in Computer Science",
+    "org": "University (placeholder)",
+    "description": "Focus on computer vision and NLP. Graduated with distinction."
+  },
+  {
+    "id": "ed003",
+    "when": "2016 — 2020",
+    "title": "B.Sc. in Computer Science & Engineering",
+    "org": "University (placeholder)",
+    "description": "Thesis on Bangla text classification with transfer learning."
+  }
+]

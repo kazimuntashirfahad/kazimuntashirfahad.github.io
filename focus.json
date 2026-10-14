@@ -1,0 +1,42 @@
+[
+  {
+    "id": "deep-learning",
+    "icon": "scan",
+    "title": "Deep Learning",
+    "short": "Developing novel architectures and training paradigms for complex data.",
+    "detail": "My work in deep learning focuses on architectures and training methods that remain efficient and reliable as data grows messier and models grow larger.",
+    "questions": "How can attention scale to long contexts without quadratic cost?\nWhich training signals make models robust to noisy or scarce labels?\nHow do we get calibrated uncertainty from deep networks?"
+  },
+  {
+    "id": "nlp",
+    "icon": "message",
+    "title": "Natural Language Processing",
+    "short": "Building models that understand, generate, and reason with human language.",
+    "detail": "I study how language models reason, where that reasoning breaks, and how to make small models competitive, including for low-resource languages like Bangla.",
+    "questions": "Can fine-tuning on intermediate thoughts improve factual consistency?\nHow well does knowledge transfer across languages with little data?\nHow do we evaluate reasoning beyond final-answer accuracy?"
+  },
+  {
+    "id": "computer-vision",
+    "icon": "eye",
+    "title": "Computer Vision",
+    "short": "Enabling machines to perceive and interpret the visual world with high fidelity.",
+    "detail": "In vision I work on recognition systems that generalize to new domains, from street scenes to medical images, with a focus on what models actually see.",
+    "questions": "Why do vision models fail under distribution shift?\nHow can semantic structure guide contrastive learning?\nWhat makes dense prediction transfer well from pretraining?"
+  },
+  {
+    "id": "representation-learning",
+    "icon": "layers",
+    "title": "Representation Learning",
+    "short": "Learning meaningful representations that generalize across tasks and domains.",
+    "detail": "Good representations are the backbone of everything else. I explore self-supervised objectives that capture semantics and transfer across tasks and modalities.",
+    "questions": "What should a model predict when it predicts masked content?\nHow do we measure representation quality without labels?\nWhich invariances help, and which ones hurt?"
+  },
+  {
+    "id": "mlops",
+    "icon": "cloud",
+    "title": "MLOps & Deployment",
+    "short": "Building scalable, reliable, and reproducible ML systems in production.",
+    "detail": "Research only matters if it ships. I build tooling for reproducible training, evaluation and deployment so results hold up outside the lab.",
+    "questions": "How do we make large training runs deterministic and auditable?\nWhat should continuous evaluation look like for ML models?\nHow do we monitor models for silent failure after deployment?"
+  }
+]

@@ -1,0 +1,187 @@
+[
+  {
+    "id": "fahad2024semantic",
+    "title": "Semantic-Aware Contrastive Learning for Domain Generalization",
+    "authors": "**Kazi Fahad**, A. Researcher, B. Collaborator",
+    "venue": "CVPR",
+    "venue_color": "#3b6fd8",
+    "year": "2024",
+    "type": "conference",
+    "topics": [
+      "computer-vision",
+      "representation-learning"
+    ],
+    "full_venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024",
+    "abstract": "We propose a semantic-aware contrastive framework that improves generalization across shifting domains in visual recognition tasks.",
+    "award": "Highlight",
+    "paper_url": "",
+    "code_url": "https://github.com/",
+    "slides_url": "",
+    "pdf": "",
+    "featured": true
+  },
+  {
+    "id": "fahad2024uncertainty",
+    "title": "Uncertainty-Guided Pseudo Labeling for Low-Resource Learning",
+    "authors": "**Kazi Fahad**, C. Scientist, D. Engineer",
+    "venue": "ICML",
+    "venue_color": "#e0353a",
+    "year": "2024",
+    "type": "conference",
+    "topics": [
+      "deep-learning"
+    ],
+    "full_venue": "International Conference on Machine Learning (ICML), 2024",
+    "abstract": "A novel uncertainty estimation strategy for pseudo labeling that significantly boosts performance on limited labeled data.",
+    "award": "",
+    "paper_url": "",
+    "code_url": "https://github.com/",
+    "slides_url": "",
+    "pdf": "",
+    "featured": true
+  },
+  {
+    "id": "fahad2023thought",
+    "title": "Enhancing LLM Reasoning via Thought-Aware Fine-Tuning",
+    "authors": "**Kazi Fahad**, E. Collaborator, F. Researcher",
+    "venue": "ACL",
+    "venue_color": "#8b3fe0",
+    "year": "2023",
+    "type": "conference",
+    "topics": [
+      "nlp"
+    ],
+    "full_venue": "Annual Meeting of the Association for Computational Linguistics (ACL), 2023",
+    "abstract": "We introduce thought-aware fine-tuning (TAFT) to improve reasoning and factual consistency in large language models.",
+    "award": "",
+    "paper_url": "",
+    "code_url": "https://github.com/",
+    "slides_url": "",
+    "pdf": "",
+    "featured": true
+  },
+  {
+    "id": "fahad2024efficient",
+    "title": "Efficient Sparse Attention for Long-Context Vision Transformers",
+    "authors": "**Kazi Fahad**, G. Author, A. Researcher",
+    "venue": "NeurIPS",
+    "venue_color": "#7a2ff0",
+    "year": "2024",
+    "type": "workshop",
+    "topics": [
+      "deep-learning",
+      "computer-vision"
+    ],
+    "full_venue": "NeurIPS Workshop on Efficient Natural Language and Speech Processing, 2024",
+    "abstract": "A content-aware sparse attention scheme that reduces memory by 4x while matching dense attention accuracy on long visual sequences.",
+    "award": "",
+    "paper_url": "",
+    "code_url": "https://github.com/",
+    "slides_url": "",
+    "pdf": "",
+    "featured": false
+  },
+  {
+    "id": "fahad2024robust",
+    "title": "Robust Representations Under Distribution Shift: A Survey",
+    "authors": "**Kazi Fahad**, B. Collaborator",
+    "venue": "arXiv",
+    "venue_color": "#b31b1b",
+    "year": "2024",
+    "type": "preprint",
+    "topics": [
+      "representation-learning"
+    ],
+    "full_venue": "arXiv preprint arXiv:2406.01234, 2024",
+    "abstract": "A structured review of methods for learning representations that remain reliable under covariate, label and concept shift.",
+    "award": "",
+    "paper_url": "",
+    "code_url": "https://github.com/",
+    "slides_url": "",
+    "pdf": "",
+    "featured": false
+  },
+  {
+    "id": "fahad2023selfsup",
+    "title": "Self-Supervised Pretraining with Masked Feature Prediction",
+    "authors": "H. Lead, **Kazi Fahad**, C. Scientist",
+    "venue": "ICLR",
+    "venue_color": "#0f8b6e",
+    "year": "2023",
+    "type": "conference",
+    "topics": [
+      "representation-learning",
+      "computer-vision"
+    ],
+    "full_venue": "International Conference on Learning Representations (ICLR), 2023",
+    "abstract": "We show that predicting masked semantic features, rather than pixels, yields stronger transfer for dense prediction tasks.",
+    "award": "",
+    "paper_url": "",
+    "code_url": "https://github.com/",
+    "slides_url": "",
+    "pdf": "",
+    "featured": false
+  },
+  {
+    "id": "fahad2023pipeline",
+    "title": "Reproducible Training Pipelines for Large-Scale Vision Models",
+    "authors": "**Kazi Fahad**, D. Engineer, A. Researcher, I. Advisor",
+    "venue": "TPAMI",
+    "venue_color": "#374151",
+    "year": "2023",
+    "type": "journal",
+    "topics": [
+      "mlops",
+      "computer-vision"
+    ],
+    "full_venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 45, 2023",
+    "abstract": "An open framework and set of best practices for deterministic, auditable training of vision models at scale.",
+    "award": "",
+    "paper_url": "",
+    "code_url": "https://github.com/",
+    "slides_url": "",
+    "pdf": "",
+    "featured": false
+  },
+  {
+    "id": "fahad2022lowres",
+    "title": "Cross-Lingual Transfer for Low-Resource Bangla NLP",
+    "authors": "**Kazi Fahad**, J. Linguist, E. Collaborator",
+    "venue": "EMNLP",
+    "venue_color": "#c2410c",
+    "year": "2022",
+    "type": "conference",
+    "topics": [
+      "nlp"
+    ],
+    "full_venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP), 2022",
+    "abstract": "We study cross-lingual transfer from high-resource languages and release a benchmark for Bangla text classification and NER.",
+    "award": "Best Resource Paper",
+    "paper_url": "",
+    "code_url": "https://github.com/",
+    "slides_url": "",
+    "pdf": "",
+    "featured": false
+  },
+  {
+    "id": "fahad2022calib",
+    "title": "Calibrated Uncertainty for Medical Image Segmentation",
+    "authors": "**Kazi Fahad**, K. Clinician, C. Scientist",
+    "venue": "AAAI",
+    "venue_color": "#0e7490",
+    "year": "2022",
+    "type": "conference",
+    "topics": [
+      "deep-learning",
+      "computer-vision"
+    ],
+    "full_venue": "AAAI Conference on Artificial Intelligence, 2022",
+    "abstract": "A lightweight calibration layer that produces trustworthy pixel-level uncertainty for clinical segmentation models.",
+    "award": "",
+    "paper_url": "",
+    "code_url": "https://github.com/",
+    "slides_url": "",
+    "pdf": "",
+    "featured": false
+  }
+]

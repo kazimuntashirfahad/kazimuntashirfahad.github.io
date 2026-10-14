@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fq001",
+    "question": "Are you open to research collaborations?",
+    "answer": "Yes. I’m especially interested in robust representation learning, efficient attention, and reasoning in language models. Send a short note about the idea and what you have in mind."
+  },
+  {
+    "id": "fq002",
+    "question": "Do you take on students or mentees?",
+    "answer": "I mentor a small number of students each year through open-source and research programs. Tell me about your background and what you want to learn."
+  },
+  {
+    "id": "fq003",
+    "question": "Can you speak at our event or reading group?",
+    "answer": "Happy to, schedule permitting. Include the date, format and audience in your message."
+  },
+  {
+    "id": "fq004",
+    "question": "How quickly do you reply?",
+    "answer": "Usually within 2 to 3 working days. If it’s urgent, mention that in the subject line."
+  }
+]
