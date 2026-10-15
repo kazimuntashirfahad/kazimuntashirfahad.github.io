@@ -1,26 +1,5 @@
 [
   {
-    "id": "fahad2024semantic",
-    "title": "Semantic-Aware Contrastive Learning for Domain Generalization",
-    "authors": "**Kazi Fahad**, A. Researcher, B. Collaborator",
-    "venue": "CVPR",
-    "venue_color": "#3b6fd8",
-    "year": "2024",
-    "type": "conference",
-    "topics": [
-      "computer-vision",
-      "representation-learning"
-    ],
-    "full_venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024",
-    "abstract": "We propose a semantic-aware contrastive framework that improves generalization across shifting domains in visual recognition tasks.",
-    "award": "Highlight",
-    "paper_url": "",
-    "code_url": "https://github.com/",
-    "slides_url": "",
-    "pdf": "",
-    "featured": true
-  },
-  {
     "id": "fahad2024uncertainty",
     "title": "Uncertainty-Guided Pseudo Labeling for Low-Resource Learning",
     "authors": "**Kazi Fahad**, C. Scientist, D. Engineer",
