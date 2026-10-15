@@ -1,19 +1,5 @@
 [
   {
-    "id": "demystifying-attention",
-    "slug": "demystifying-attention",
-    "title": "Demystifying Attention Mechanisms",
-    "date": "2024-05-12",
-    "read_time": "8 min",
-    "category": "Deep Learning",
-    "excerpt": "A deep dive into the intuition and math behind attention in neural networks.",
-    "cover_style": "art-violet",
-    "cover_image": "",
-    "body": "Attention is the idea that made modern deep learning click. Transformers, large language models and most state-of-the-art vision models are built on it, yet the core mechanism fits on a napkin. In this post we'll build it up from scratch.\n\n## Attention as a soft lookup table\n\nImagine a dictionary that maps *keys* to *values*. A normal lookup returns the value whose key exactly matches your query. Attention does something gentler: it compares your **query** with *every* key, turns the similarity scores into weights, and returns a weighted average of all the values.\n\n> Attention is a differentiable dictionary lookup: every key contributes, in proportion to how well it matches the query.\n\n## Scaled dot-product attention\n\nWith queries `Q`, keys `K` and values `V` stacked as matrices, the whole operation is a single line:\n\n$$ Attention(Q, K, V) = softmax(QKᵀ / √dₖ) V $$\n\nThe division by `√d_k` keeps the dot products from growing with the dimension, which would otherwise push the softmax into regions with vanishing gradients.\n\n```\nimport torch\nimport torch.nn.functional as F\n\ndef attention(q, k, v, mask=None):\n    d_k = q.size(-1)\n    scores = q @ k.transpose(-2, -1) / d_k ** 0.5\n    if mask is not None:\n        scores = scores.masked_fill(mask == 0, float(\"-inf\"))\n    weights = F.softmax(scores, dim=-1)\n    return weights @ v, weights\n```\n\n## Why multiple heads?\n\nA single attention head produces one weighted average, so it can only focus on one kind of relationship at a time. Multi-head attention runs several heads in parallel on lower-dimensional projections, letting the model attend to syntax, position and meaning simultaneously, then concatenates the results.\n\n## The cost of looking everywhere\n\nComparing every query with every key costs `O(n²)` in sequence length. That is fine for a paragraph and painful for a book or a high-resolution image, which is why so much current research, including my own, focuses on **sparse and efficient attention**.\n\n## Takeaways\n\n- Attention is a weighted average whose weights come from query-key similarity.\n- Scaling by √dₖ keeps training stable.\n- Multiple heads capture different relationships in parallel.\n- Quadratic cost is the main bottleneck for long inputs.\n",
-    "featured": true,
-    "published": true
-  },
-  {
     "id": "reliable-ml-systems",
     "slug": "reliable-ml-systems",
     "title": "Building Reliable ML Systems",
