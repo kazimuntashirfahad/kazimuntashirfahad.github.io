@@ -1,19 +1,5 @@
 [
   {
-    "id": "representation-learning-2024",
-    "slug": "representation-learning-2024",
-    "title": "Representation Learning in 2024",
-    "date": "2024-04-10",
-    "read_time": "7 min",
-    "category": "Research",
-    "excerpt": "Key trends and emerging directions in representation learning research.",
-    "cover_style": "art-orange",
-    "cover_image": "",
-    "body": "Key trends and emerging directions in representation learning research. This article is a placeholder that shows how a full post will look on the site. Replace this text with the finished article.\n\n## Why this matters\n\nEvery post follows the same simple structure: a clear motivation, the key idea explained with intuition first and math second, a small code example where it helps, and practical takeaways you can apply right away.\n\n> Good research writing makes the reader feel clever, not the author.\n\n## Takeaways\n\n- Start from intuition, then formalize.\n- Show a minimal, runnable example.\n- End with what to do next.\n",
-    "featured": false,
-    "published": true
-  },
-  {
     "id": "pseudo-labels",
     "slug": "pseudo-labels",
     "title": "When Pseudo Labels Lie",
