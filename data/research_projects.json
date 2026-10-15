@@ -1,12 +1,5 @@
 [
   {
-    "id": "rp002",
-    "when": "2024 — Now",
-    "title": "Reasoning in small language models",
-    "role": "Co-lead",
-    "description": "Distillation and thought-aware fine-tuning for models under 3B parameters."
-  },
-  {
     "id": "rp003",
     "when": "2023 — 2024",
     "title": "Domain generalization benchmark",
