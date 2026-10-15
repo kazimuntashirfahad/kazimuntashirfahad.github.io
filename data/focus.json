@@ -18,7 +18,7 @@
   {
     "id": "computer-vision",
     "icon": "eye",
-    "title": "Computer Vision",
+    "title": "Computer Vision and Pattern Recognition",
     "short": "Enabling machines to perceive and interpret the visual world with high fidelity.",
     "detail": "In vision I work on recognition systems that generalize to new domains, from street scenes to medical images, with a focus on what models actually see.",
     "questions": "Why do vision models fail under distribution shift?\nHow can semantic structure guide contrastive learning?\nWhat makes dense prediction transfer well from pretraining?"
