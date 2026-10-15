@@ -1,25 +1,5 @@
 [
   {
-    "id": "fahad2022lowres",
-    "title": "Cross-Lingual Transfer for Low-Resource Bangla NLP",
-    "authors": "**Kazi Fahad**, J. Linguist, E. Collaborator",
-    "venue": "EMNLP",
-    "venue_color": "#c2410c",
-    "year": "2022",
-    "type": "conference",
-    "topics": [
-      "nlp"
-    ],
-    "full_venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP), 2022",
-    "abstract": "We study cross-lingual transfer from high-resource languages and release a benchmark for Bangla text classification and NER.",
-    "award": "Best Resource Paper",
-    "paper_url": "",
-    "code_url": "https://github.com/",
-    "slides_url": "",
-    "pdf": "",
-    "featured": false
-  },
-  {
     "id": "fahad2022calib",
     "title": "Calibrated Uncertainty for Medical Image Segmentation",
     "authors": "**Kazi Fahad**, K. Clinician, C. Scientist",
