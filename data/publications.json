@@ -1,26 +1,5 @@
 [
   {
-    "id": "fahad2023selfsup",
-    "title": "Self-Supervised Pretraining with Masked Feature Prediction",
-    "authors": "H. Lead, **Kazi Fahad**, C. Scientist",
-    "venue": "ICLR",
-    "venue_color": "#0f8b6e",
-    "year": "2023",
-    "type": "conference",
-    "topics": [
-      "representation-learning",
-      "computer-vision"
-    ],
-    "full_venue": "International Conference on Learning Representations (ICLR), 2023",
-    "abstract": "We show that predicting masked semantic features, rather than pixels, yields stronger transfer for dense prediction tasks.",
-    "award": "",
-    "paper_url": "",
-    "code_url": "https://github.com/",
-    "slides_url": "",
-    "pdf": "",
-    "featured": false
-  },
-  {
     "id": "fahad2023pipeline",
     "title": "Reproducible Training Pipelines for Large-Scale Vision Models",
     "authors": "**Kazi Fahad**, D. Engineer, A. Researcher, I. Advisor",
