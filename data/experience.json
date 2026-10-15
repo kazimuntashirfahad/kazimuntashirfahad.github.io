@@ -1,12 +1,5 @@
 [
   {
-    "id": "ex001",
-    "when": "Summer 2024",
-    "title": "Research Scientist Intern",
-    "org": "AI Research Lab (placeholder)",
-    "description": "Worked on long-context efficient attention for vision transformers; resulted in a NeurIPS workshop paper."
-  },
-  {
     "id": "ex002",
     "when": "2023",
     "title": "Machine Learning Engineer Intern",
