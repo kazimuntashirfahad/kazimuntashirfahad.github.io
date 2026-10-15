@@ -1,26 +1,5 @@
 [
   {
-    "id": "fahad2024efficient",
-    "title": "Efficient Sparse Attention for Long-Context Vision Transformers",
-    "authors": "**Kazi Fahad**, G. Author, A. Researcher",
-    "venue": "NeurIPS",
-    "venue_color": "#7a2ff0",
-    "year": "2024",
-    "type": "workshop",
-    "topics": [
-      "deep-learning",
-      "computer-vision"
-    ],
-    "full_venue": "NeurIPS Workshop on Efficient Natural Language and Speech Processing, 2024",
-    "abstract": "A content-aware sparse attention scheme that reduces memory by 4x while matching dense attention accuracy on long visual sequences.",
-    "award": "",
-    "paper_url": "",
-    "code_url": "https://github.com/",
-    "slides_url": "",
-    "pdf": "",
-    "featured": false
-  },
-  {
     "id": "fahad2024robust",
     "title": "Robust Representations Under Distribution Shift: A Survey",
     "authors": "**Kazi Fahad**, B. Collaborator",
