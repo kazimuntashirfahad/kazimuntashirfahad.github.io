@@ -1,17 +1,17 @@
 [
   {
-    "id": "ex002",
-    "when": "December 2023 - April 2024",
-    "title": "Business Development Intern",
-    "org": "Biztrade BD",
-    "description": "Primarily worked with the Marketing team to ensure product research and market analysis. Also conducted customer research and launched an online marketing campaign, collaborating with the tactical team – Power BI, Python, R, MySQL, Figma."
-  },
-  {
     "id": "idvqky73",
     "title": "Junior UI/UX Designer (Contractual)",
     "org": "Byteporph IT, Dhaka",
     "when": "January 2025 - July 2025",
     "description": "Design websites and software as the company needs, also for clients' needs. – Figma"
+  },
+  {
+    "id": "ex002",
+    "when": "December 2023 - April 2024",
+    "title": "Business Development Intern",
+    "org": "Biztrade BD",
+    "description": "Primarily worked with the Marketing team to ensure product research and market analysis. Also conducted customer research and launched an online marketing campaign, collaborating with the tactical team – Power BI, Python, R, MySQL, Figma."
   },
   {
     "id": "cizfip9a",
