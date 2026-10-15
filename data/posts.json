@@ -1,19 +1,5 @@
 [
   {
-    "id": "pseudo-labels",
-    "slug": "pseudo-labels",
-    "title": "When Pseudo Labels Lie",
-    "date": "2024-03-02",
-    "read_time": "6 min",
-    "category": "Research",
-    "excerpt": "What goes wrong with self-training, and how uncertainty estimates help.",
-    "cover_style": "art-lime",
-    "cover_image": "",
-    "body": "What goes wrong with self-training, and how uncertainty estimates help. This article is a placeholder that shows how a full post will look on the site. Replace this text with the finished article.\n\n## Why this matters\n\nEvery post follows the same simple structure: a clear motivation, the key idea explained with intuition first and math second, a small code example where it helps, and practical takeaways you can apply right away.\n\n> Good research writing makes the reader feel clever, not the author.\n\n## Takeaways\n\n- Start from intuition, then formalize.\n- Show a minimal, runnable example.\n- End with what to do next.\n",
-    "featured": false,
-    "published": true
-  },
-  {
     "id": "finetune-small-llms",
     "slug": "finetune-small-llms",
     "title": "Fine-Tuning Small LLMs on a Budget",
