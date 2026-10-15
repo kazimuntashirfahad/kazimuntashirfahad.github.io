@@ -1,25 +1,5 @@
 [
   {
-    "id": "fahad2024uncertainty",
-    "title": "Uncertainty-Guided Pseudo Labeling for Low-Resource Learning",
-    "authors": "**Kazi Fahad**, C. Scientist, D. Engineer",
-    "venue": "ICML",
-    "venue_color": "#e0353a",
-    "year": "2024",
-    "type": "conference",
-    "topics": [
-      "deep-learning"
-    ],
-    "full_venue": "International Conference on Machine Learning (ICML), 2024",
-    "abstract": "A novel uncertainty estimation strategy for pseudo labeling that significantly boosts performance on limited labeled data.",
-    "award": "",
-    "paper_url": "",
-    "code_url": "https://github.com/",
-    "slides_url": "",
-    "pdf": "",
-    "featured": true
-  },
-  {
     "id": "fahad2023thought",
     "title": "Enhancing LLM Reasoning via Thought-Aware Fine-Tuning",
     "authors": "**Kazi Fahad**, E. Collaborator, F. Researcher",
