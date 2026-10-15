@@ -1,22 +1,5 @@
 [
   {
-    "id": "neurokit",
-    "name": "NeuroKit",
-    "logo_icon": "letter",
-    "logo_letter": "N",
-    "color": "#7c3aed",
-    "logo_image": "",
-    "description": "A modular deep learning library for building and training neural networks with ease.",
-    "stars": "1.2k",
-    "categories": "library, deep learning",
-    "tech": "PyTorch, Python, CUDA",
-    "github_url": "https://github.com/",
-    "docs_url": "",
-    "featured": true,
-    "spotlight": true,
-    "spotlight_text": "NeuroKit gives researchers composable building blocks, sensible training loops and reproducible configs, so experiments go from idea to result in an afternoon."
-  },
-  {
     "id": "dataflow",
     "name": "DataFlow",
     "logo_icon": "chart-up",
