@@ -1,22 +1,5 @@
 [
   {
-    "id": "visionlab",
-    "name": "VisionLab",
-    "logo_icon": "cube",
-    "logo_letter": "V",
-    "color": "#3b82f6",
-    "logo_image": "",
-    "description": "Computer vision models and utilities for research and real-world applications.",
-    "stars": "1.4k",
-    "categories": "library, computer vision",
-    "tech": "PyTorch, OpenCV, ONNX",
-    "github_url": "https://github.com/",
-    "docs_url": "",
-    "featured": true,
-    "spotlight": false,
-    "spotlight_text": ""
-  },
-  {
     "id": "tinylm",
     "name": "TinyLM",
     "logo_icon": "cpu",
