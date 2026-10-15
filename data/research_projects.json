@@ -1,12 +1,5 @@
 [
   {
-    "id": "rp003",
-    "when": "2023 — 2024",
-    "title": "Domain generalization benchmark",
-    "role": "Contributor",
-    "description": "A benchmark and leaderboard for robustness under realistic shift (ShiftBench)."
-  },
-  {
     "id": "rp004",
     "when": "2022 — 2023",
     "title": "Bangla NLP resources",
