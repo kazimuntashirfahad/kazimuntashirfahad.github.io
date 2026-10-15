@@ -1,25 +1,5 @@
 [
   {
-    "id": "fahad2024robust",
-    "title": "Robust Representations Under Distribution Shift: A Survey",
-    "authors": "**Kazi Fahad**, B. Collaborator",
-    "venue": "arXiv",
-    "venue_color": "#b31b1b",
-    "year": "2024",
-    "type": "preprint",
-    "topics": [
-      "representation-learning"
-    ],
-    "full_venue": "arXiv preprint arXiv:2406.01234, 2024",
-    "abstract": "A structured review of methods for learning representations that remain reliable under covariate, label and concept shift.",
-    "award": "",
-    "paper_url": "",
-    "code_url": "https://github.com/",
-    "slides_url": "",
-    "pdf": "",
-    "featured": false
-  },
-  {
     "id": "fahad2023selfsup",
     "title": "Self-Supervised Pretraining with Masked Feature Prediction",
     "authors": "H. Lead, **Kazi Fahad**, C. Scientist",
