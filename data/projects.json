@@ -1,22 +1,5 @@
 [
   {
-    "id": "dataflow",
-    "name": "DataFlow",
-    "logo_icon": "chart-up",
-    "logo_letter": "D",
-    "color": "#c6f31c",
-    "logo_image": "",
-    "description": "A data pipeline toolkit for ML workflows with preprocessing, augmentation & loading.",
-    "stars": "890",
-    "categories": "tooling, mlops",
-    "tech": "Python, Ray, Arrow",
-    "github_url": "https://github.com/",
-    "docs_url": "",
-    "featured": true,
-    "spotlight": false,
-    "spotlight_text": ""
-  },
-  {
     "id": "evalml",
     "name": "EvalML",
     "logo_icon": "brackets",
