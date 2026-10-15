@@ -1,26 +1,5 @@
 [
   {
-    "id": "fahad2023pipeline",
-    "title": "Reproducible Training Pipelines for Large-Scale Vision Models",
-    "authors": "**Kazi Fahad**, D. Engineer, A. Researcher, I. Advisor",
-    "venue": "TPAMI",
-    "venue_color": "#374151",
-    "year": "2023",
-    "type": "journal",
-    "topics": [
-      "mlops",
-      "computer-vision"
-    ],
-    "full_venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 45, 2023",
-    "abstract": "An open framework and set of best practices for deterministic, auditable training of vision models at scale.",
-    "award": "",
-    "paper_url": "",
-    "code_url": "https://github.com/",
-    "slides_url": "",
-    "pdf": "",
-    "featured": false
-  },
-  {
     "id": "fahad2022lowres",
     "title": "Cross-Lingual Transfer for Low-Resource Bangla NLP",
     "authors": "**Kazi Fahad**, J. Linguist, E. Collaborator",
