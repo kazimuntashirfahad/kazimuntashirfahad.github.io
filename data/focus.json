@@ -22,13 +22,5 @@
     "short": "Enabling machines to perceive and interpret the visual world with high fidelity.",
     "detail": "In vision I work on recognition systems that generalize to new domains, from street scenes to medical images, with a focus on what models actually see.",
     "questions": "Why do vision models fail under distribution shift?\nHow can semantic structure guide contrastive learning?\nWhat makes dense prediction transfer well from pretraining?"
-  },
-  {
-    "id": "mlops",
-    "icon": "cloud",
-    "title": "MLOps & Deployment",
-    "short": "Building scalable, reliable, and reproducible ML systems in production.",
-    "detail": "Research only matters if it ships. I build tooling for reproducible training, evaluation and deployment so results hold up outside the lab.",
-    "questions": "How do we make large training runs deterministic and auditable?\nWhat should continuous evaluation look like for ML models?\nHow do we monitor models for silent failure after deployment?"
   }
 ]
