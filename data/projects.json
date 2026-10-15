@@ -1,22 +1,5 @@
 [
   {
-    "id": "evalml",
-    "name": "EvalML",
-    "logo_icon": "brackets",
-    "logo_letter": "E",
-    "color": "#f07a1a",
-    "logo_image": "",
-    "description": "A lightweight evaluation suite for comparing ML models across multiple metrics.",
-    "stars": "675",
-    "categories": "tooling",
-    "tech": "Python, NumPy, Plotly",
-    "github_url": "https://github.com/",
-    "docs_url": "",
-    "featured": true,
-    "spotlight": false,
-    "spotlight_text": ""
-  },
-  {
     "id": "visionlab",
     "name": "VisionLab",
     "logo_icon": "cube",
