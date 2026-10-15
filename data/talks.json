@@ -1,11 +1,5 @@
 [
   {
-    "id": "tk002",
-    "year": "2024",
-    "title": "Reviewer",
-    "detail": "CVPR, ICML, NeurIPS, ACL"
-  },
-  {
     "id": "tk003",
     "year": "2023",
     "title": "Tutorial: Practical Self-Supervised Learning",
