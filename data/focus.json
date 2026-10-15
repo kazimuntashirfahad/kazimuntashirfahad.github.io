@@ -24,14 +24,6 @@
     "questions": "Why do vision models fail under distribution shift?\nHow can semantic structure guide contrastive learning?\nWhat makes dense prediction transfer well from pretraining?"
   },
   {
-    "id": "representation-learning",
-    "icon": "layers",
-    "title": "Representation Learning",
-    "short": "Learning meaningful representations that generalize across tasks and domains.",
-    "detail": "Good representations are the backbone of everything else. I explore self-supervised objectives that capture semantics and transfer across tasks and modalities.",
-    "questions": "What should a model predict when it predicts masked content?\nHow do we measure representation quality without labels?\nWhich invariances help, and which ones hurt?"
-  },
-  {
     "id": "mlops",
     "icon": "cloud",
     "title": "MLOps & Deployment",
