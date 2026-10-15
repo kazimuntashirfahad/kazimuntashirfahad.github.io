@@ -14,18 +14,18 @@
     "description": "Design websites and software as the company needs, also for clients' needs. – Figma"
   },
   {
-    "id": "ex002",
-    "when": "",
-    "title": "Business Development Intern",
-    "org": "Biztrade BD",
-    "description": "Primarily worked with the Marketing team to ensure product research and market analysis. Also conducted customer research and launched an online marketing campaign, collaborating with the tactical team – Power BI, Python, R, MySQL, Figma."
-  },
-  {
     "id": "ne0x2ar9",
     "title": "Chef Technical Officer (CTO)",
     "org": "CogPix",
     "when": "",
     "description": "- Lead technical strategy and oversee the development of AI-powered products, SaaS applications, and intelligent automation solutions.\n- Architect and develop scalable software systems, web applications, and data-driven platforms.\n- Drive the integration of AI and machine learning technologies into practical, business-focused products.\n- Oversee technology selection, system architecture, development workflows, and software quality.\n- Guide product development from ideation and prototyping to implementation and deployment.\n- Align technical decisions with business objectives, product scalability, and long-term growth."
+  },
+  {
+    "id": "ex002",
+    "when": "",
+    "title": "Business Development Intern",
+    "org": "Biztrade BD",
+    "description": "Primarily worked with the Marketing team to ensure product research and market analysis. Also conducted customer research and launched an online marketing campaign, collaborating with the tactical team – Power BI, Python, R, MySQL, Figma."
   },
   {
     "id": "cizfip9a",
