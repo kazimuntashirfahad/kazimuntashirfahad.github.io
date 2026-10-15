@@ -12,12 +12,5 @@
     "title": "Machine Learning Engineer Intern",
     "org": "Tech Company (placeholder)",
     "description": "Built reproducible training pipelines and evaluation dashboards used across three teams."
-  },
-  {
-    "id": "ex003",
-    "when": "2020 — 2022",
-    "title": "Graduate Research Assistant",
-    "org": "Vision & Language Lab",
-    "description": "Led data collection and baselines for low-resource Bangla NLP benchmarks."
   }
 ]
