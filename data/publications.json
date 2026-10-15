@@ -1,25 +1,5 @@
 [
   {
-    "id": "fahad2023thought",
-    "title": "Enhancing LLM Reasoning via Thought-Aware Fine-Tuning",
-    "authors": "**Kazi Fahad**, E. Collaborator, F. Researcher",
-    "venue": "ACL",
-    "venue_color": "#8b3fe0",
-    "year": "2023",
-    "type": "conference",
-    "topics": [
-      "nlp"
-    ],
-    "full_venue": "Annual Meeting of the Association for Computational Linguistics (ACL), 2023",
-    "abstract": "We introduce thought-aware fine-tuning (TAFT) to improve reasoning and factual consistency in large language models.",
-    "award": "",
-    "paper_url": "",
-    "code_url": "https://github.com/",
-    "slides_url": "",
-    "pdf": "",
-    "featured": true
-  },
-  {
     "id": "fahad2024efficient",
     "title": "Efficient Sparse Attention for Long-Context Vision Transformers",
     "authors": "**Kazi Fahad**, G. Author, A. Researcher",
