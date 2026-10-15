@@ -28,17 +28,17 @@
     "description": "Primarily worked with the Marketing team to ensure product research and market analysis. Also conducted customer research and launched an online marketing campaign, collaborating with the tactical team – Power BI, Python, R, MySQL, Figma."
   },
   {
-    "id": "cizfip9a",
-    "title": "Human Resourse Intern",
-    "org": "Janata Bank PLC, Dhaka.",
-    "when": "",
-    "description": "Working in customer handling and attending corporate meetings. Deal with new account opening and financial risk management – Microsoft Office tools."
-  },
-  {
     "id": "pp8x7hzh",
     "title": "Mathematics Mentor",
     "org": "Kabbo Coaching",
     "when": "2025",
     "description": "Teach basic mathematics to the students of classes six to ten."
+  },
+  {
+    "id": "cizfip9a",
+    "title": "Human Resourse Intern",
+    "org": "Janata Bank PLC, Dhaka.",
+    "when": "",
+    "description": "Working in customer handling and attending corporate meetings. Deal with new account opening and financial risk management – Microsoft Office tools."
   }
 ]
