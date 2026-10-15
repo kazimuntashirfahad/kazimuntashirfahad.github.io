@@ -1,22 +1,5 @@
 [
   {
-    "id": "tinylm",
-    "name": "TinyLM",
-    "logo_icon": "cpu",
-    "logo_letter": "T",
-    "color": "#22c39a",
-    "logo_image": "",
-    "description": "Distilled small language models that run on a laptop CPU with competitive reasoning quality.",
-    "stars": "540",
-    "categories": "nlp, research",
-    "tech": "Transformers, PEFT, GGUF",
-    "github_url": "https://github.com/",
-    "docs_url": "",
-    "featured": false,
-    "spotlight": false,
-    "spotlight_text": ""
-  },
-  {
     "id": "robustbench",
     "name": "ShiftBench",
     "logo_icon": "shield",
