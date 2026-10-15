@@ -1,22 +1,5 @@
 [
   {
-    "id": "promptlab",
-    "name": "PromptLab",
-    "logo_icon": "sparkles",
-    "logo_letter": "P",
-    "color": "#a855f7",
-    "logo_image": "",
-    "description": "An experiment tracker for LLM prompts with versioning, A/B tests and automatic evals.",
-    "stars": "460",
-    "categories": "tooling, nlp, mlops",
-    "tech": "TypeScript, FastAPI, SQLite",
-    "github_url": "https://github.com/",
-    "docs_url": "",
-    "featured": false,
-    "spotlight": false,
-    "spotlight_text": ""
-  },
-  {
     "id": "speechlite",
     "name": "BanglaSpeech",
     "logo_icon": "mic",
