@@ -1,12 +1,5 @@
 [
   {
-    "id": "rp001",
-    "when": "2024 — Now",
-    "title": "Long-context efficient vision transformers",
-    "role": "Lead researcher",
-    "description": "Sparse, content-aware attention for high-resolution video and documents."
-  },
-  {
     "id": "rp002",
     "when": "2024 — Now",
     "title": "Reasoning in small language models",
